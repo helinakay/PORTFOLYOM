@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+
+}
+img{
+    width: 200px; /* Resim genişliği */
+    height: auto; /* Oran korunsun */
+    margin: 10px;
+    transition: transform 400ms ease; /* Geçiş efekti */
+    
+
+}
+.imgi:hover img{
+    transform: scale(1.05);
+}
+
+
+    
+.imgol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Her satırda 3 sütun */
+    gap: 20px; /* Görseller arası boşluk */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Her satırda 3 sütun */
+    gap: 20px; /* Görseller arası boşluk */
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+.img{
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    transition: transform 400ms ease;
+}
