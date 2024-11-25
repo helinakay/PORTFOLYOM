@@ -17,9 +17,14 @@ body{
 }
 .container{
     position: relative;
-    width: 100%; /* Adjust as needed */
-    margin: 20px 0; /* Spacing between containers */
+    width: 100%; 
+    margin: 0px 0; 
     overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    max-width:1800px;
+    margin: 0 auto;
 }
 img {
     width: 800px;
@@ -34,15 +39,16 @@ img {
     padding: 0%;
 }
 .text h1{
-    font-size: 50px;
+    font-size: 70px;
     text-align: inline;
     float: left;
     padding: 0%;
     margin: 0%;
     text-wrap: balance;
     color: black;
-    
 
+    
+    
 }
 .text2 h1{
     font-size: 50px;
@@ -65,7 +71,7 @@ img {
     position: absolute;
     top: 50%;
     left: 34%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -34%);
     color: black;
     opacity: 0;
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -73,13 +79,18 @@ img {
 }
 
 .container:hover img {
-    filter: blur(4px); /* Add blur to the image */
+    filter: blur(4px); 
 }
 .container:hover .efekt1 {
     opacity: 1;
     transform: translate(-50%, -50%);
 }
 .efekt1 a:hover {
-    text-decoration: underline; /* Optional: Add underline on hover */
-    color: blue; /* Optional: Change color on hover */
+    text-decoration: underline; 
+    color: blue; 
 }
+.text h1 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    color: black;}
