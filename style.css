@@ -70,7 +70,7 @@ img {
 .efekt1 {
     position: absolute;
     top: 50%;
-    left: 34%;
+    left: 600px;
     transform: translate(-50%, -34%);
     color: black;
     opacity: 0;
